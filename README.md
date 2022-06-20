@@ -1,2 +1,1 @@
-# Mousey
-Mouse movement prototype
+# UnityPrototypes
