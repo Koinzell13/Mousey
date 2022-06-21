@@ -5,6 +5,9 @@ using UnityEngine;
 public class MouseTracker : MonoBehaviour
 {
     Vector3 lastMousePos;
+    public float mouseCursorSpeed;
+
+
     public Vector3 mouseDelta
     {
         get
@@ -22,5 +25,6 @@ public class MouseTracker : MonoBehaviour
         // Use mouseDelta as needed, then update lastMousePos at
 
         lastMousePos = Input.mousePosition;
+        mouseCursorSpeed = Input.GetAxis("Mouse X") / Time.deltaTime;
     }
 }
